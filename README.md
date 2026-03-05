@@ -41,7 +41,6 @@ Applies horizontal diffusion to each of the five 64-bit words using circular rig
 <br>
 
 > Full permutation: `p = pL ∘ pS ∘ pC`
-<br>
 
 ### Ascon-Hash Pseudocode
 ```
@@ -92,7 +91,6 @@ Ascon_12.jl
 └── Test Vectors
     └── HOLAA · HOLAe · HOLAI · HOLAo
 ```
-<br>
 
 
 ## 🔧 Function Reference
@@ -108,8 +106,6 @@ Ascon_12.jl
 | `RR_64(x, n)` | Circular right rotation of a 64-bit word by `n` positions |
 | `Concatenate_Array(aux_array_00)` | Concatenates array elements into a single hex string |
 | `Print_state_S(aux_S, aux_message)` | Prints all five state words with a debug message label |
-<br>
-
 
 ### Permutation & Hash Functions
 | Function | Description |
@@ -120,20 +116,17 @@ Ascon_12.jl
 | `Ascon_Linear_Layer(S)` | Linear diffusion layer using dual-rotation XOR per word |
 | `Ascon_Permutation(S, rounds)` | Full Ascon permutation: `pC → pS → pL`, iterated `rounds` times |
 | `Ascon_HASH(message, variant, hashlength)` | Complete Ascon-Hash with initialization, absorption, and squeezing |
-<br>
 
 
 ## 🚀 Usage
 ### Requirements
 - [Julia](https://julialang.org/) `>= 1.6`
 - No external packages required — uses only Julia's standard library
-<br>
 
 ### Running
 ```bash
 julia Ascon_12.jl
 ```
-<br>
 
 ### Example
 ```julia
@@ -143,7 +136,6 @@ Ascon_HASH("HOLAA")
 # Using explicit variant and output length
 Ascon_HASH("HOLAA", "Ascon-Hash", 32)
 ```
-<br>
 
 ### Debug Flags
 Three global flags control verbose output:
