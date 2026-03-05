@@ -155,13 +155,13 @@ All outputs were validated against a Python reference implementation and a VHDL 
 | `HOLAI` | `58364b614dbce490ea3af3151df7eafde616e340705496835b959441a7c0e301` |
 | `HOLAo` | `3f60d0bb7de7d1e124c986083d22223e81c24a314d583cd43b0fd74aa119629d` |
 
+
 ## 🔬 Implementation Notes
 - The S-Box is implemented in three ways (`Sbox_00`, `S_box_01`, `Sbox_02`) to allow comparison between logical expressions and look-up table approaches. The active implementation in the permutation uses `Ascon_Sbox_02` (decomposed logical form).
 - The linear layer uses dual circular right-rotation offsets per word: `(19, 28)`, `(61, 39)`, `(1, 6)`, `(10, 17)`, `(7, 41)` for words `x₀–x₄` respectively.
 - Padding follows the Ascon specification: the message is padded with `0x80` followed by zero bytes to fill the current rate-block.
 - For `Ascon-Hash` and `Ascon-Hasha`, the tag specification value is `256`; for XOF variants it is `0`.
 - The parameters used are: `a = 12`, `b = 12` (matching the VHDL hardware implementation), `rate = 8 bytes`.
-<br>
 
 
 ## 📖 References
@@ -172,7 +172,6 @@ All outputs were validated against a Python reference implementation and a VHDL 
 5. Eichlseder et al. — *Ascon: A Family of Authenticated Encryption Algorithms* — https://github.com/ascon
 6. Hashing Tools — *Ascon Hash Family* — https://hashing.tools/ascon
 7. Tezcan — *Lightweight Cryptography for IoT* (2022)
-<br>
 
 
 ## 👤 Author
