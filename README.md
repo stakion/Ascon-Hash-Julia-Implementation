@@ -11,9 +11,8 @@ This repository contains a Julia implementation of **Ascon-Hash**, built and val
 
 
 ## ✨ Key Features of the Ascon Family
-<br>
 | Feature | Description |
-|---|---|
+|---------|-------------|
 | 🧽 **Sponge-based** | SPN-based custom permutation with sponge construction |
 | 🔒 **Provable security** | Key-finalized secure mode for additional robustness |
 | ⚡ **Lightweight** | Small state, simple permutation — designed for constrained devices |
