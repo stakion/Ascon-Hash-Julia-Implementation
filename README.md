@@ -1,7 +1,6 @@
 # Ascon-Hash-Julia-Implementation
 > **Lightweight Cryptography · Sponge-Based Hashing · NIST Standard 2023**  
 > Implementation of the Ascon-Hash algorithm in Julia, validated against Python and VHDL reference implementations.
-<br>
 
 
 ## 📌 Overview
