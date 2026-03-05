@@ -144,7 +144,6 @@ debug_variables = true    # Prints internal initialization values
 debug           = true    # Prints state S at each major phase
 debugpermutation = false  # Prints state S at every permutation round
 ```
-<br>
 
 
 ## ✅ Test Vectors
@@ -155,8 +154,6 @@ All outputs were validated against a Python reference implementation and a VHDL 
 | `HOLAe` | `b7d5c92906480321dd7433b9d415bbf082f376a8dd53217def036a93a25d375c` |
 | `HOLAI` | `58364b614dbce490ea3af3151df7eafde616e340705496835b959441a7c0e301` |
 | `HOLAo` | `3f60d0bb7de7d1e124c986083d22223e81c24a314d583cd43b0fd74aa119629d` |
-<br>
-
 
 ## 🔬 Implementation Notes
 - The S-Box is implemented in three ways (`Sbox_00`, `S_box_01`, `Sbox_02`) to allow comparison between logical expressions and look-up table approaches. The active implementation in the permutation uses `Ascon_Sbox_02` (decomposed logical form).
